@@ -1,0 +1,93 @@
+    /* Estilos generales */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* Asegura que el padding no afecte el tamaño total de los elementos */
+    }
+
+    body {
+        height: 100vh;
+        /* Mantener la altura del body en 100vh */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(23, 41, 56);
+        transition: background-color 0.3s ease;
+        /* Suaviza el cambio de color de fondo */
+    }
+
+    /* Contenedores */
+
+    .contenedor-principal {
+        width: 90vw;
+        /* Ocupa el 90% del ancho de la ventana */
+        max-width: 600px;
+        max-height: 500px;
+        /* Limitar la altura del contenedor */
+        height: auto;
+        /* Altura automática para adaptarse al contenido */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 20px;
+        /* Esquinas suaves */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        /* Sombra para simular una ventana */
+        overflow: hidden;
+        /* Evita desbordamiento de contenido */
+    }
+
+    .contenedor-interno {
+        padding: 10px;
+        /* Reducido para que el contenedor interno sea más pequeño */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* Sombra al contenedor interno */
+        max-width: 280px;
+        /* Limitar el ancho del contenedor interno */
+        width: 100%;
+        /* Hacer que el contenedor interno use todo el ancho disponible */
+    }
+
+    .color {
+        padding: 10px;
+        /* Reducido para que cada sección de color sea más pequeña */
+        margin: 10px 0;
+        /* Mantener margen vertical */
+        font-size: 1.5em;
+        /* Reducido para que se ajuste mejor */
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    label,
+    p {
+        margin: 10px;
+        /* Reducido el margen para que ocupe menos espacio */
+    }
+
+    h1 {
+        margin-bottom: 10px;
+        /* Espacio debajo del título */
+    }
+
+    input[type="range"] {
+        width: 100%;
+        /* Deslizadores ocupan todo el ancho del contenedor */
+    }
+
+    p {
+        font-size: 14px;
+        /* Tamaño de la fuente ajustado para que se vea mejor */
+        margin-top: 5px;
+        /* Pequeño margen superior */
+    }
